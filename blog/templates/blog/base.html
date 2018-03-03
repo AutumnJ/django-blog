@@ -10,6 +10,10 @@
     </head>
     <body>
         <div class="page-header">
+            {% if user.is_authenticated %}
+                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            {% endif %}
+            <!-- "glyphicon glyphicon-plus" is provided by bootstrap and displays a + sign -->
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
         <div class="content container">

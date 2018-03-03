@@ -1,0 +1,9 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h1>New post</h1>
+    <form method="POST" class="post-form">{% csrf_token %} <!-- form tag, token makes form secure, otherwise django will complain -->
+        {{ form.as_p }} <!-- displays form -->
+        <button type="submit" class="save btn btn-default">Save</button> 
+    </form>
+{% endblock %}
