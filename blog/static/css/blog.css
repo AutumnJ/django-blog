@@ -8,7 +8,8 @@ body {
 }*/
 
 .page-header {
-    background-color: #0988B3;
+    /*background-color: #0988B3;*/
+    background:url('https://autumnj.github.io//assets/images/IMG_0793.JPG') center no-repeat;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }

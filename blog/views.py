@@ -7,7 +7,7 @@ from django.shortcuts import redirect
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    # import pdb; pdb.set_trace()
+    # import pdb; pdb.set_trace() -- use this for debugging 
     return render(request, 'blog/post_list.html', {'posts': posts})
 
 # created a function (def) called post_list that takes request 
