@@ -4,6 +4,7 @@
     <h1>New post</h1>
     <form method="POST" class="post-form">{% csrf_token %} <!-- form tag, token makes form secure, otherwise django will complain -->
         {{ form.as_p }} <!-- displays form -->
+        <a class="btn btn-default" href="/"><span class="glyphicon glyphicon-home"></span></a>
         <button type="submit" class="save btn btn-default">Save</button> 
     </form>
 {% endblock %}
