@@ -10,7 +10,10 @@ body {
 .page-header {
     /*background-color: #0988B3;*/
     background:url('https://autumnj.github.io//assets/images/IMG_0793.JPG') center no-repeat;
+    height: 200px; 
+    width: 100%;
     margin-top: 0;
+    background-size: 100% 100%;
     padding: 20px 20px 20px 40px;
 }
 
@@ -18,6 +21,7 @@ body {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+    padding: 60px 20px 20px 55px;
 }
 
 .content {
