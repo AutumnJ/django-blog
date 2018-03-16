@@ -4,7 +4,6 @@ from .models import Post, Comment
 
 class PostForm(forms.ModelForm):
   #PostForm is the name of our form
-  # Tell Django that this form is a ModelForm – forms.ModelForm is responsible for that
 
     class Meta:
       #class Meta, where we tell Django which model should be used to create this form (model = Post)
